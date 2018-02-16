@@ -15,12 +15,15 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
-  gem 'rspec-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'pry-rails'
+  gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
-end
+  gem 'shoulda-matchers'
+  gem 'pry'
+  gem 'database_cleaner'
+  gem 'factory_bot_rails', '~> 4.0'
+end 
 
 group :development do
   gem 'web-console', '>= 3.3.0'
