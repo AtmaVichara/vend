@@ -1,2 +1,4 @@
 class Snack < ApplicationRecord
+
+
 end
