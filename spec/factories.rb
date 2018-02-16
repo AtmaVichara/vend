@@ -1,4 +1,8 @@
 FactoryBot.define do
+  factory :snack_machine do
+    snack 
+    machine
+  end
 
   factory :owner do
     sequence(:name) { |n| "name#{n}"}
@@ -7,7 +11,6 @@ FactoryBot.define do
   factory :snack do
     sequence(:name) { |n| "name #{n}"}
     sequence(:price) { |n| "#{n}"}
-    machine
   end
 
   factory :machine do

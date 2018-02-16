@@ -5,7 +5,8 @@ describe "a user sees all snacks and prices" do
     it "shows all snacks and prices" do
       owner = create(:owner)
       machine = create(:machine, owner_id: owner.id)
-      snack = create_list(:snack, 3, machine_id: machine.id)
+      snack = create_list(:snack, 3)
+      snack_machine = SnackMachine.create(machine_id: machine.id, snack_id: snack.id)
 
       visit machine_path(machine)
 
